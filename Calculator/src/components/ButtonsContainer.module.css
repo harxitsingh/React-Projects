@@ -1,0 +1,12 @@
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 60px); /* 3 same-size columns */
+  justify-content: center;
+  gap: 8px;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
