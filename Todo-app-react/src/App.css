@@ -1,0 +1,122 @@
+/* Reset + base */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Page background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.todo-container {
+  background: #ffffff;
+  width: 520px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Row spacing */
+.kg-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+/* Buttons */
+.kg-button {
+  min-width: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-success {
+  background: #22c55e;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #16a34a;
+}
+
+.btn-danger {
+  background: #ef4444;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* Todo list container */
+.items-container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Individual todo item */
+.items-container .row {
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Todo text */
+.items-container .col-6 {
+  font-weight: 500;
+  color: #111827;
+}
+
+.items-container .col-4 {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Empty state text */
+.welcome {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #6b7280;
+}
+.item-container .row {
+  display: flex;
+  align-items: center;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
