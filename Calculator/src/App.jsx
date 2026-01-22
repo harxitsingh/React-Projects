@@ -6,7 +6,7 @@ import Display from "./components/Display";
 import ButtonsContainer from "./components/ButtonsContainer";
                       
 function App() {
-  const [calVal, setCalVal] = useState("");
+  const [calVal,setCalVal] = useState("");
 
   const onButtonClick = (buttonText) =>{
     if (buttonText === "C") {
