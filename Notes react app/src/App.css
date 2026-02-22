@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ===== Body ===== */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #0b0f19;
+  color: #e5e7eb;
+  min-height: 100vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ===== Container ===== */
+.container {
+  max-width: 950px;
+  margin: 70px auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* ===== Headings ===== */
+h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
 
+/* ===== Card ===== */
 .card {
-  padding: 2em;
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  border-color: #06b6d4;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+  transform: translateY(-3px);
+}
+
+/* ===== Links ===== */
+a {
+  text-decoration: none;
+  color: #f3f4f6;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: #06b6d4;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: transparent;
+  border: 1px solid #06b6d4;
+  color: #06b6d4;
+  padding: 7px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #06b6d4;
+  color: #0b0f19;
+}
+
+/* ===== Inputs ===== */
+input,
+textarea {
+  width: 100%;
+  background: #111827;
+  border: 1px solid #1f2937;
+  color: #f3f4f6;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #06b6d4;
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+/* ===== Navbar ===== */
+nav {
+  background: #0f172a;
+  padding: 20px 35px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid #1f2937;
+}
+
+nav a {
+  color: #9ca3af;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+nav a.active {
+  color: #06b6d4;
+}
+.card h3 {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card a {
+  color: #ffffff;
 }
